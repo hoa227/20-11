@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Liên hệ góp ý</title>
+
+<style>
+body{
+    font-family:Arial;
+    background: linear-gradient(to right,#ffecd2,#fcb69f);
+    text-align:center;
+}
+
+/* Khung liên hệ */
+.box{
+    width:400px;
+    margin:80px auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+    animation:shake 3s infinite alternate;
+}
+
+/* rung nhẹ */
+@keyframes shake{
+    from{transform:rotate(-1deg);}
+    to{transform:rotate(1deg);}
+}
+
+input,textarea{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:10px 20px;
+    background:#ff4081;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+button:hover{
+    background:#e91e63;
+}
+
+/* Sticker xung quanh */
+.sticker{
+    position:absolute;
+    font-size:30px;
+}
+
+.s1{top:50px;left:50px;}
+.s2{top:100px;right:80px;}
+.s3{bottom:100px;left:100px;}
+.s4{bottom:50px;right:50px;}
+</style>
+</head>
+
+<body>
+
+<div class="sticker s1">🌸</div>
+<div class="sticker s2">💖</div>
+<div class="sticker s3">🍎</div>
+<div class="sticker s4">⭐</div>
+
+<div class="box">
+<h2>💌 Gửi lời yêu thương 💌</h2>
+
+<input type="text" placeholder="Họ tên"><br>
+<textarea rows="5" placeholder="Viết lời chúc cho thầy cô..."></textarea><br>
+<button>Gửi</button>
+
+<br><br>
+<a href="index.html">← Quay về Trang chủ</a>
+</div>
+
+</body>
+</html>
